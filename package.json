@@ -1,0 +1,48 @@
+{
+  "name": "bot-manager-squarecloud",
+  "version": "1.0.0",
+  "description": "Sistema de gerenciamento e deploy automatizado de bots usando a API da Square Cloud.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "deploy-commands": "ts-node src/deploy-commands.ts"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "manager",
+    "deploy",
+    "squarecloud",
+    "fastify",
+    "typescript",
+    "webhook",
+    "automação",
+    "mercadopago"
+  ],
+  "author": "gustavo-blacknaut",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gustavo-blacknaut/bot-manager-squarecloud.git"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.12.0",
+    "@squarecloud/api": "^3.7.8",
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.2.1",
+    "fastify": "^5.4.0",
+    "mercadopago": "^2.8.0",
+    "pino": "^9.7.0",
+    "pino-pretty": "^13.0.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "prisma": "^6.12.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
