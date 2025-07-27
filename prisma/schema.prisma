@@ -37,7 +37,7 @@ model GuildConfig {
 model DeployTicket {
   id             String       @id @default(auto()) @map("_id") @db.ObjectId
   channelId      String       @unique
-  guildId        String       // Adicionado para referência
+  guildId        String       
   status         TicketStatus @default(PENDING_UPLOAD)
   uploadedFileId String?
   createdAt      DateTime     @default(now())
