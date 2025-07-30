@@ -61,7 +61,8 @@ npm install
 
 #### 🔐 Gerar ENCRYPTION\_KEY
 
-```node
+```bash
+node
 require('crypto').randomBytes(32).toString('hex')
 ```
 
